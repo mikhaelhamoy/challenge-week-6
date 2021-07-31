@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="hero is-info is-small mx-5 mt-5">
+        <div class="hero-body has-text-centered pb-3 pt-2">
+            <h1 class="title is-4 has-text-weight-bold">Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <main class="columns mx-5 mt-2">
+        
+        <div class="column is-one-quarter pt-0">
+            <h2 class="title is-5 mb-2 has-text-weight-bold">
+                Search for a City:
+            </h2>
+            <form class="pb-2 form-border">
+                <input class="input is-small mb-2" type="text" name="city" id="city" placeholder="Toronto" />
+                <button class="button is-fullwidth is-small is-info" type="submit">Search</button>
+            </form>
+            <div class="content">
+
+            </div>
+
+        </div>
+        <div class="column pl-0 pt-2">
+            <div class="current-weather pl-1 mb-3 content is-small">
+                <h2 class="title is-5 has-text-weight-bold mb-3">
+                    Toronto (7/30/2021)
+                </h2>
+                <p class="m-0 pb-3 has-text-weight-semibold">Temp: <span></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">Wind: <span></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">Humidity: <span></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">UV Index: <span></span></p>
+            </div>
+            <div>
+                <div class="title is-6 has-text-weight-bold">5-Day Forecast:</div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
