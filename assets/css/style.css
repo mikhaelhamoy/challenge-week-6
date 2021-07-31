@@ -5,3 +5,48 @@
 .form-border {
     border-bottom: black solid 1px;
 }
+
+.forecast {
+    background-color: #0f2843;
+    color: white;
+    padding: 0.25rem;
+    margin: 0 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.forecast-content {
+    margin: 0;
+    padding-bottom: 0.75rem;
+}
+
+.btn-history {
+    background-color: #a8a8a8;
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+#currentUVIndex {
+    padding: 2px 5px;
+}
+
+.low {
+    background-color: green;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.high {
+    background-color: orange;
+}
+
+.very-high {
+    background-color: red;
+}
+
+.extreme {
+    background-color: purple;
+}

@@ -21,33 +21,67 @@
             <h2 class="title is-5 mb-2 has-text-weight-bold">
                 Search for a City:
             </h2>
-            <form class="pb-2 form-border">
+            <form id="user-form" class="pb-2 form-border">
                 <input class="input is-small mb-2" type="text" name="city" id="city" placeholder="Toronto" />
-                <button class="button is-fullwidth is-small is-info" type="submit">Search</button>
+                <button class="button is-fullwidth is-small is-info has-text-weight-semibold" type="submit">Search</button>
             </form>
-            <div class="content">
-
+            <div id="search-history">
+                <!-- <button class="button btn-history" type="submit">Search</button>
+                <button class="button btn-history" type="submit">Search</button>
+                <button class="button btn-history" type="submit">Search</button>
+                <button class="button btn-history" type="submit">Search</button> -->
             </div>
 
         </div>
         <div class="column pl-0 pt-2">
             <div class="current-weather pl-1 mb-3 content is-small">
-                <h2 class="title is-5 has-text-weight-bold mb-3">
-                    Toronto (7/30/2021)
+                <h2 id="currentCity" class="title is-5 has-text-weight-bold mb-3">
+                    <!-- Toronto (7/30/2021) -->
+                    <i id="currentIcon"></i>
                 </h2>
-                <p class="m-0 pb-3 has-text-weight-semibold">Temp: <span></span></p>
-                <p class="m-0 pb-3 has-text-weight-semibold">Wind: <span></span></p>
-                <p class="m-0 pb-3 has-text-weight-semibold">Humidity: <span></span></p>
-                <p class="m-0 pb-3 has-text-weight-semibold">UV Index: <span></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">Temp: <span id="currentTemp"></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">Wind: <span id="currentWind"></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">Humidity: <span id="currentHumidity"></span></p>
+                <p class="m-0 pb-3 has-text-weight-semibold">UV Index: <span id="currentUVIndex"></span></p>
             </div>
             <div>
                 <div class="title is-6 has-text-weight-bold">5-Day Forecast:</div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="columns is-size-7 has-text-weight-semibold">
+                    <!-- <div class="column forecast">
+                        <p class="forecast-content">7/30/2021</p>
+                        <p class="forecast-content">sample</p>
+                        <p class="forecast-content">Temp: <span class="forecast-temp"></span></p>
+                        <p class="forecast-content">Wind: <span class="forecast-wind"></span></p>
+                        <p class="forecast-content">Humidity: <span class="forecast-humidity"></span></p>
+                    </div>
+                    <div class="column forecast">
+                        <p class="forecast-content">7/30/2021</p>
+                        <p class="forecast-content">sample</p>
+                        <p class="forecast-content">Temp: <span class="forecast-temp"></span></p>
+                        <p class="forecast-content">Wind: <span class="forecast-wind"></span></p>
+                        <p class="forecast-content">Humidity: <span></span></p>
+                    </div>
+                    <div class="column forecast">
+                        <p class="forecast-content">7/30/2021</p>
+                        <p class="forecast-content">sample</p>
+                        <p class="forecast-content">Temp: <span class="forecast-temp"></span></p>
+                        <p class="forecast-content">Wind: <span class="forecast-wind"></span></p>
+                        <p class="forecast-content">Humidity: <span></span></p>
+                    </div>
+                    <div class="column forecast">
+                        <p class="forecast-content">7/30/2021</p>
+                        <p class="forecast-content">sample</p>
+                        <p class="forecast-content">Temp: <span class="forecast-temp"></span></p>
+                        <p class="forecast-content">Wind: <span class="forecast-wind"></span></p>
+                        <p class="forecast-content">Humidity: <span></span></p>
+                    </div>
+                    <div class="column forecast">
+                        <p class="forecast-content">7/30/2021</p>
+                        <p class="forecast-content">sample</p>
+                        <p class="forecast-content">Temp: <span class="forecast-temp"></span></p>
+                        <p class="forecast-content">Wind: <span class="forecast-wind"></span></p>
+                        <p class="forecast-content">Humidity: <span></span></p>
+                    </div> -->
                 </div>
             </div>
         </div>
