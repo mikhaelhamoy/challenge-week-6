@@ -1,3 +1,7 @@
+.header-bg {
+    background-image: linear-gradient(to right, #004fc0,  #121c64);
+}
+
 .current-weather {
     border: solid 1px black;
 }
@@ -31,22 +35,17 @@
     padding: 2px 5px;
 }
 
-.low {
+.favorable {
     background-color: green;
+    color: white;
 }
 
 .moderate {
-    background-color: yellow;
+    background-color: #ffbf00;
+    color: white;
 }
 
-.high {
-    background-color: orange;
-}
-
-.very-high {
+.severe {
     background-color: red;
-}
-
-.extreme {
-    background-color: purple;
+    color: white;
 }
